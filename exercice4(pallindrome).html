@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPalindrome (d)
+        {
+            var c = mot.length;
+        var T = [];
+        while (c > 0)
+        {
+            T.push(mot[c-1])
+            c--;
+        }
+        var motinverse = T.join("") 
+        
+        
+            if (mot==motinverse)
+                {
+                    document.write("true")
+                }
+            else
+            {
+                document.write("false")
+            }
+        }
+        var mot = prompt("Entrez votre mot")
+        mot = mot.toLowerCase();
+        mot = mot.trim();
+        isPalindrome(mot);
+        
+        
+
+    </script>
+</body>
+</html>

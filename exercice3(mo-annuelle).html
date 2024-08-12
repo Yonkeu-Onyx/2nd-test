@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var M = parseInt(prompt("Veuillez entrer votre moyenne annuelle"))
+        var Decision;
+        var Mention;
+        while (M<0 || M > 20)
+            {
+                var M = parseInt(prompt("Erreur! Votre moyenne doit etre compris entre 0 et 20. Veuillez entrer votre moyenne annuelle"))  
+            }
+        if ( M >=18 ) {
+            Decision = "Admis";
+            Mention = "Excellent";
+        } else if ( M >=16 && M < 18 ) {
+            Decision = "Admis";
+            Mention = "Tres Bien";
+        } else if ( M >=14 && M < 16 ) {
+            Decision = "Admis";
+            Mention = "Bien";
+        } else if ( M >=12 && M < 14 ) {
+            Decision = "Admis";
+            Mention = "Assez Bien";
+        } else if ( M >=10 && M < 12 ) {
+            Decision = "Admis";
+            Mention = "Passable";
+        } else {
+             Decision = "Redouble";
+            Mention = "Insuffissant";
+        }
+        document.write("Decision Finale : " + Decision + "<br>" )
+        document.write("Votre mention est : " + Mention)
+        
+        
+    </script>
+    
+</body>
+</html>

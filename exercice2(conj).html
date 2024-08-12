@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var verbe = prompt("Entrez un verbe du premier groupe")
+        var T = [];
+        var T3 = [];
+        var verbe2;
+        var verbe3;
+        for (var i = 0; i < (verbe.length-1); i++ )
+        {
+            T.push(verbe[i])
+        }
+        verbe2 = T.join("")
+        for (var j = 0; j < (verbe.length-2); j++ )
+        {
+            T3.push(verbe[j])
+        }
+        verbe3 = T3.join("")
+        document.write("La conjugaison de " + verbe + " est comme suit : <br>")
+        document.write("Je " + verbe2 + "<br>")
+        document.write("Tu " + verbe2 + "s <br>")
+        document.write("Il/elle " + verbe2 + "<br>")
+        document.write("Nous " + verbe3 + "ons <br>")
+        document.write("Vous " + verbe2 + "z <br>")
+        document.write("Ils/elles " + verbe2 + "nt <br>")
+        
+    </script>
+    
+</body>
+</html>
